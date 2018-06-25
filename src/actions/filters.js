@@ -7,7 +7,7 @@ export const setStyleFilter = (style = '') => ({
     style
 });
 export const setTransmissionFilter = (transmission = '') => ({
-    type: 'SET_BRAND_FILTER',
+    type: 'SET_TRANSMISSION_FILTER',
     transmission
 });
 

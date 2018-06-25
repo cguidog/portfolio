@@ -1,11 +1,11 @@
-const filtersReducersDefaultState = {
+const filtersReducerDefaultState = {
     brand: '',
     style: '',
     transmission: '',
     sortBy: 'price'
 };
 
-export default (state = filtersReducersDefaultState, action) => {
+export default (state = filtersReducerDefaultState, action) => {
     switch (action.type) {
         case 'SET_BRAND_FILTER':
             return {
@@ -24,13 +24,13 @@ export default (state = filtersReducersDefaultState, action) => {
                 };
         case 'SORT_BY_PRICE':
             return {
-            ...state,
-            sortBy: 'price'
+                ...state,
+                sortBy: 'price'
                 };
         case 'SORT_BY_YEAR':
             return {
-            ...state,
-            sortBy: 'year'
+                ...state,
+                sortBy: 'year'
                 };
         default:
         return state;

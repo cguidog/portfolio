@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-// import AppRouter from './routers/AppRouter'
+import AppRouter from './routers/AppRouter'
 import configureStore from './store/configureStore';
 import { addCar } from './actions/cars';
 // import getVisibleCars from './selectors/cars';
@@ -19,7 +19,7 @@ store.dispatch(addCar({brand: 'GMC', style: 'Sierra', year: 2015, price: 23000})
 
 const jsx = (
     <Provider store={store}>
-    <CarList/>
+    <AppRouter/>
     </Provider>
 );
 

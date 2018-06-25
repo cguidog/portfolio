@@ -7,7 +7,7 @@ class CarListFilters extends React.Component {
         return (
             <div>
             <input 
-            type='text'
+            type="text"
             value={this.props.filters.brand}
             onChange={(e) => {
                 this.props.dispatch(setBrandFilter(e.target.value));
