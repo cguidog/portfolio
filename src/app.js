@@ -14,6 +14,7 @@ const store = configureStore();
 
 store.dispatch(addCar({brand: 'Toyota', style: 'Corolla', year: 2005, price: 3000}))
 store.dispatch(addCar({brand: 'Ford', style: 'Mustang', year: 2000, price: 45200}))
+store.dispatch(addCar({brand: 'Ford', style: 'F250', year: 2017, price: 37689}))
 store.dispatch(addCar({brand: 'Nissan', style: 'Sentra', year: 1998, price: 250}))
 store.dispatch(addCar({brand: 'GMC', style: 'Sierra', year: 2015, price: 23000}))
 

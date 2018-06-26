@@ -3,14 +3,24 @@ import {connect} from 'react-redux';
 import {setBrandFilter, setStyleFilter, setTransmissionFilter, sortByPrice, sortByYear} from '../actions/filters';
 
 class CarListFilters extends React.Component {
+    state = {};
     render() {
         return (
             <div>
             <input 
             type="text"
+            placeholder='brand'
             value={this.props.filters.brand}
             onChange={(e) => {
                 this.props.dispatch(setBrandFilter(e.target.value));
+            }}
+            />
+            <input 
+            type="text"
+            placeholder='style'
+            value={this.props.filters.style}
+            onChange={(e) => {
+                this.props.dispatch(setStyleFilter(e.target.value));
             }}
             />
             <select
