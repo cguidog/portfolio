@@ -8,5 +8,4 @@ const CarDashboardPage = () => (
     <CarList/>
     </div>
 );
-
 export default CarDashboardPage;

@@ -1,7 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {setBrandFilter, setStyleFilter, setTransmissionFilter, sortByPrice, sortByYear} from '../actions/filters';
-
 class CarListFilters extends React.Component {
     state = {};
     render() {
@@ -40,10 +39,10 @@ class CarListFilters extends React.Component {
         );
     };
 };
-
 const mapStateToProps = (state) => {
     return {
         filters: state.filters
     };
 };
+
 export default connect(mapStateToProps)(CarListFilters);
