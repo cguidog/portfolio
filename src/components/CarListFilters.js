@@ -32,7 +32,7 @@ class CarListFilters extends React.Component {
                 }
             }}
             >
-            <option value='price'>Price</option>
+            <option value='price'>{this.props.cars[0].brand}</option>
             <option value='year'>Year</option>
             </select>
             </div>
@@ -40,8 +40,10 @@ class CarListFilters extends React.Component {
     };
 };
 const mapStateToProps = (state) => {
+    console.log(state.cars.length);
     return {
-        filters: state.filters
+        filters: state.filters,
+        cars: state.cars
     };
 };
 
