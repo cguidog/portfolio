@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {setBrandFilter, setStyleFilter, setTransmissionFilter, sortByPrice, sortByYear} from '../actions/filters';
+import Options from '../components/Options';
 class CarListFilters extends React.Component {
     state = {};
     render() {
@@ -22,6 +23,7 @@ class CarListFilters extends React.Component {
                 this.props.dispatch(setStyleFilter(e.target.value));
             }}
             />
+            <Options/>
             <select
             value={this.props.filters.sortBy}
             onChange={(e) => {
@@ -32,7 +34,7 @@ class CarListFilters extends React.Component {
                 }
             }}
             >
-            <option value='price'>{this.props.cars[0].brand}</option>
+            <option value='price'>{this.props.cars.length}</option>
             <option value='year'>Year</option>
             </select>
             </div>
