@@ -6,7 +6,7 @@ export const addCar = (
         style = '',
         year = 0,
         price = 0,
-        transmission = '',
+        transmission = ''
     } = {}
 ) => ({
     type: 'ADD_CAR',
@@ -17,5 +17,6 @@ export const addCar = (
         year,
         price,
         transmission
+
     }
 });

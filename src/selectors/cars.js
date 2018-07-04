@@ -17,4 +17,3 @@ export default (cars, { brand, style, sortBy, brandSelect}) => {
     }
   });
 };
-

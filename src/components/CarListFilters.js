@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {setBrandFilter, setStyleFilter, setTransmissionFilter, sortByPrice, sortByYear} from '../actions/filters';
+import {setBrandFilter, setStyleFilter, setTransmissionFilter, sortByPrice, sortByYear, setBrandList} from '../actions/filters';
 import Options from '../components/Options';
 class CarListFilters extends React.Component {
     state = {};
@@ -34,7 +34,7 @@ class CarListFilters extends React.Component {
                 }
             }}
             >
-            <option value='price'>{this.props.cars.length}</option>
+            <option value='price'>Price</option>
             <option value='year'>Year</option>
             </select>
             </div>
@@ -42,7 +42,6 @@ class CarListFilters extends React.Component {
     };
 };
 const mapStateToProps = (state) => {
-    console.log(state.cars.length);
     return {
         filters: state.filters,
         cars: state.cars

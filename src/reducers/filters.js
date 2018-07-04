@@ -2,7 +2,8 @@ const filtersReducerDefaultState = {
     brand: '',
     style: '',
     transmission: '',
-    sortBy: 'price'
+    sortBy: 'price',
+    brandList: []
 };
 
 export default (state = filtersReducerDefaultState, action) => {
@@ -22,6 +23,11 @@ export default (state = filtersReducerDefaultState, action) => {
                 ...state,
                 transmission: action.transmission
                 };
+        case 'SET_BRANDLIST_FILTER':
+            return {
+                ...state,
+                brandList: action.brand
+            }
         case 'SORT_BY_PRICE':
             return {
                 ...state,

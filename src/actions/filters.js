@@ -18,3 +18,7 @@ export const sortByPrice = () => ({
 export const sortByYear = () => ({
     type: 'SORT_BY_YEAR'
 });
+export const setBrandList = (brandList = []) => ({
+    type: 'SET_BRANDLIST_FILTER',
+    brandList
+})
