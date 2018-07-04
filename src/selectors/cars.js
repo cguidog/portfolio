@@ -1,14 +1,13 @@
 
 // Get visible expenses
 
-export default (cars, { brand, style, sortBy, brandSelect}) => {
+export default (cars, { brand, style, sortBy}) => {
   //console.log(cars);
   return cars.filter((car) => {
     const brandMatch = car.brand.toLowerCase().includes(brand.toLowerCase());
     const styleMatch = car.style.toLowerCase().includes(style.toLowerCase());
-    const brandSelect = car.brand;
     //console.log(brandSelect);
-    return brandMatch && styleMatch && brandSelect;
+    return brandMatch && styleMatch
   }).sort((a, b) => {
     if (sortBy === 'price') {
       return a.price < b.price ? 1 : -1;

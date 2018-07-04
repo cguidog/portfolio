@@ -3,7 +3,7 @@ const filtersReducerDefaultState = {
     style: '',
     transmission: '',
     sortBy: 'price',
-    brandList: []
+    brandList: ['Brand'],
 };
 
 export default (state = filtersReducerDefaultState, action) => {
