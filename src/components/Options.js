@@ -5,7 +5,13 @@ import {setBrandFilter, setStyleFilter, setTransmissionFilter, sortByPrice, sort
 const Options = (props) => (
     <div>
         <select onChange={(e) => {
-            props.dispatch(setBrandFilter(e.target.value));}}
+            if (e.target.value === 'ALL') {
+                props.dispatch(setBrandFilter(''));
+                //console.log(props.filter.brand);
+            } else {props.dispatch(setBrandFilter(e.target.value));
+                    console.log(props.filters.brand);
+            };
+            }}
           >
             {
                 props.cars.map((car)=> {

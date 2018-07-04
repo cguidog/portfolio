@@ -10,9 +10,9 @@ class CarListFilters extends React.Component {
             <input 
             type="text"
             placeholder='brand'
-            value={this.props.filters.brand}
+            // value={this.props.filters.brand}
             onChange={(e) => {
-                this.props.dispatch(setBrandFilter(e.target.value));
+                //this.props.dispatch(setBrandFilter(e.target.value));
             }}
             />
             <input 
