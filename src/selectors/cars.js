@@ -1,14 +1,12 @@
 
 // Get visible expenses
 
-export default (cars, { brand, validator, sortBy}) => {
-  //console.log(cars);
+export default (cars, { brand, validator, sortBy, transmission}) => {
   return cars.filter((car) => {
     const brandMatch = car.brand.includes(brand);
-    //const styleMatch = validator.includes(car.style);
     const validatorMatch = validator.indexOf(car.style) !== -1 || car.style.includes(validator);
-    //console.log(brandSelect);
-    return brandMatch && validatorMatch
+    const tranmissionMatch = car.transmission.includes(transmission) || transmission === 'any';
+    return brandMatch && validatorMatch && tranmissionMatch
   }).sort((a, b) => {
     if (sortBy === 'price') {
       return a.price < b.price ? 1 : -1;

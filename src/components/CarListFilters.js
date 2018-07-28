@@ -2,12 +2,16 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {sortByPrice, sortByYear} from '../actions/filters';
 import Options from '../components/Options';
+import StyleOptions from '../components/StyleOptions';
+import Transmission from '../components/TransmissionOptions';
 class CarListFilters extends React.Component {
     state = {};
     render() {
         return (
             <div>
             <Options/>
+            <StyleOptions/>
+            <Transmission/>
             <select
             value={this.props.filters.sortBy}
             onChange={(e) => {

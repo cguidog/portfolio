@@ -1,7 +1,7 @@
 const filtersReducerDefaultState = {
     brand: '',
-    style: '',
     transmission: '',
+    transmissionList: ['any'],
     sortBy: 'price',
     brandList: ['ALL'],
     styleList: [],
@@ -25,26 +25,11 @@ export default (state = filtersReducerDefaultState, action) => {
                 ...state,
                 validator: [...state.validator.slice(0, state.validator.indexOf(action.validator)), ...state.validator.slice(state.validator.indexOf(action.validator) + 1)]
                 };
-        case 'SET_STYLE_FILTER':
-            return {
-                ...state,
-                style: action.style
-                };
         case 'SET_TRANSMISSION_FILTER':
             return {
                 ...state,
                 transmission: action.transmission
                 };
-        case 'SET_BRANDLIST_FILTER':
-            return {
-                ...state,
-                brandList: action.brand
-            }
-            case 'SET_STYLELIST_FILTER':
-            return {
-                ...state,
-                styleList: action.styleList
-            }
         case 'SORT_BY_PRICE':
             return {
                 ...state,
