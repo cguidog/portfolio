@@ -6,8 +6,8 @@ const Options = (props) => (
     <div>
         <select onClick={()=> {props.filters.styleList = [];
                     props.filters.validator = [];
-                    props.filters.transmissionList = ['any'];
-                    props.filters.transmission = 'any'}}
+                }
+            }
                 onChange={(e) => {
                     if (e.target.value === 'ALL') {
                         props.dispatch(setBrandFilter(''));
