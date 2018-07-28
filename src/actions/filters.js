@@ -18,7 +18,15 @@ export const sortByPrice = () => ({
 export const sortByYear = () => ({
     type: 'SORT_BY_YEAR'
 });
-export const setBrandList = (brandList = []) => ({
+export const setBrandListFilter = (brandList = ['ALL']) => ({
     type: 'SET_BRANDLIST_FILTER',
     brandList
-})
+});
+export const setStyleValidatorFilter = (validator = []) => ({
+    type: 'SET_STYLE_VALIDATOR_FILTER',
+    validator
+});
+export const setStyleValidatorFilterRemove = (validator = []) => ({
+    type: 'SET_STYLE_VALIDATOR_FILTER_REMOVE',
+    validator
+});

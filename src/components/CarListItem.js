@@ -1,12 +1,13 @@
 import React from 'react';
 
-const CarListItem = ({id, brand, style, year, price}) => (
+const CarListItem = ({brand, style, year, price, transmission, image}) => (
     <div>
-    <p>{id}</p>
+    <img src={image} />
     <p>{brand}</p>
     <p>{style}</p>
     <p>{year}</p>
     <p>{price}</p>
+    <p>{transmission}</p>
     </div>
 );
 
