@@ -1,0 +1,13 @@
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 $m-size;
+}
+
+.sexy_line { 
+    margin: 1rem 30rem;
+    height: 1px;
+    border: 0;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+}
