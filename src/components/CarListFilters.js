@@ -9,6 +9,7 @@ class CarListFilters extends React.Component {
     render() {
         return (
             <div>
+            <h1>React Car Search</h1>
             <Options/>
             <StyleOptions/>
             <Transmission/>

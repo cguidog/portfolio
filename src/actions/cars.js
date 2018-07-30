@@ -8,6 +8,8 @@ export const addCar = (
         price = 0,
         transmission = '',
         image= '',
+        exteriorColor= '',
+        interiorColor= ''
     } = {}
 ) => ({
     type: 'ADD_CAR',
@@ -19,5 +21,7 @@ export const addCar = (
         price,
         transmission,
         image,
+        exteriorColor,
+        interiorColor
     }
 });

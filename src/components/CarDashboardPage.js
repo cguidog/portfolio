@@ -4,8 +4,8 @@ import CarListFilters from './CarListFilters';
 
 const CarDashboardPage = () => (
     <div>
-    <CarList/>
     <CarListFilters/>
+    <CarList/>
     </div>
 );
 export default CarDashboardPage;

@@ -5,7 +5,6 @@ import selectCars from '../selectors/cars';
 
 const CarList = (props) => (
     <div>
-        <h1>Car List</h1>
         {props.cars.map((car) => {
             return <CarListItem key={car.id} {...car} />
         })}
