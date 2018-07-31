@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 import {setTransmissionFilter} from '../actions/filters';
 //Displays items with selected transmission.
 const Transmission = (props) => (
-    <div>
-    <select
+    <div className='filter_container'>
+    <select className='filter'
     value={props.filters.transmission}
     onChange={(e) => {
       props.dispatch(setTransmissionFilter(e.target.value));

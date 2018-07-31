@@ -5,7 +5,7 @@ export default (cars, { brand, validator, sortBy, transmission}) => {
   return cars.filter((car) => {
     const brandMatch = car.brand.includes(brand);
     const validatorMatch = validator.indexOf(car.style) !== -1 || car.style.includes(validator);
-    const tranmissionMatch = car.transmission.includes(transmission) || transmission === 'any';
+    const tranmissionMatch = car.transmission.includes(transmission) || transmission === 'TRANSMISSION';
     return brandMatch && validatorMatch && tranmissionMatch
   }).sort((a, b) => {
     if (sortBy === 'price') {

@@ -4,7 +4,7 @@ import uuid from 'uuid';
 import {setStyleValidatorFilter, setStyleValidatorFilterRemove} from '../actions/filters';
 //Display the styles according to the selected brand.
 const StyleOptions = (props) => (
-    <div>
+    <div className='checkbox'>
         {
             props.cars.map((car)=> {
             if (props.filters.styleList.indexOf(car.style) === -1 && car.brand.toUpperCase() === props.filters.brand.toUpperCase()) {
@@ -20,7 +20,7 @@ const StyleOptions = (props) => (
                                     } else {props.dispatch(setStyleValidatorFilterRemove(e.target.value));
                                     };
                                 }} key={props.filters.styleList.indexOf(style)}/>
-                                <label htmlFor={style} key={uuid()}>{style.toUpperCase()}</label>
+                                <label className='label' htmlFor={style} key={uuid()}>{style.toUpperCase()}</label>
                             </div>
                         })
                     }

@@ -4,8 +4,8 @@ const CarListItem = ({brand, style, year, price, transmission, image, exteriorCo
 
     <div className='container'>
     <h2 className='title'>{brand.toUpperCase()} {style.toUpperCase()} {year}</h2>
-    <div className='image'>
-    <img src={image}/>
+    <div className='image_container'>
+    <img className='image' src={image}/>
     <div className='details'>
     <p>PRICE: ${price}.00</p>
     <p>TRANSMISSION: {transmission.toUpperCase()}</p>

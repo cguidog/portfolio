@@ -13,7 +13,8 @@ class CarListFilters extends React.Component {
             <Options/>
             <StyleOptions/>
             <Transmission/>
-            <select
+            <div className='filter_container'>
+            <select className='filter'
             value={this.props.filters.sortBy}
             onChange={(e) => {
                 if (e.target.value === 'price') {
@@ -23,9 +24,10 @@ class CarListFilters extends React.Component {
                 }
             }}
             >
-            <option value='price'>Price</option>
-            <option value='year'>Year</option>
+            <option value='price'>SORT BY PRICE</option>
+            <option value='year'>SORT BY YEAR</option>
             </select>
+            </div>
             </div>
         );
     };

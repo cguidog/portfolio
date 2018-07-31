@@ -4,12 +4,12 @@ import {setBrandFilter} from '../actions/filters';
 //Display the brand selector
 const Options = (props) => (
     <div>
-        <select onClick={()=> {props.filters.styleList = [];
+        <select className='filter' onClick={()=> {props.filters.styleList = [];
                     props.filters.validator = [];
                 }
             }
                 onChange={(e) => {
-                    if (e.target.value === 'ALL') {
+                    if (e.target.value === 'BRAND') {
                         props.dispatch(setBrandFilter(''));
                         console.log(props.filters.transmissionList);
                     } else {props.dispatch(setBrandFilter(e.target.value));

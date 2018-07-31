@@ -1,0 +1,24 @@
+.filter {
+    border: none;
+    appearance: none;
+    background: $bdy-bckgnd;
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: solid $container;
+    margin-bottom: 1rem;
+    margin-left: 10%;
+}
+
+.checkbox {
+    margin: 0 0 1% 10%;
+}
+
+.label {
+    font-size: 2rem;
+    border: none;
+}
+
+.filter_container {
+    margin-bottom:1%;
+}

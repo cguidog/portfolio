@@ -1,9 +1,9 @@
 const filtersReducerDefaultState = {
     brand: '',
     transmission: '',
-    transmissionList: ['any'],
+    transmissionList: ['TRANSMISSION'],
     sortBy: 'price',
-    brandList: ['ALL'],
+    brandList: ['BRAND'],
     styleList: [],
     validator: []
 };
