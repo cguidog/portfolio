@@ -4,12 +4,16 @@ import {sortByPrice, sortByYear} from '../actions/filters';
 import Options from '../components/Options';
 import StyleOptions from '../components/StyleOptions';
 import Transmission from '../components/TransmissionOptions';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCar, faSearch } from '@fortawesome/free-solid-svg-icons'
+
+
 class CarListFilters extends React.Component {
     state = {};
     render() {
         return (
             <div>
-            <h1>React Car Search</h1>
+            <h1 className='main_title'><span><FontAwesomeIcon icon={faCar} /></span> React Car Search <span><FontAwesomeIcon icon={faSearch} /></span></h1>
             <Options/>
             <StyleOptions/>
             <Transmission/>
