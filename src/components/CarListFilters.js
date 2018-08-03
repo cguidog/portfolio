@@ -5,7 +5,8 @@ import Options from '../components/Options';
 import StyleOptions from '../components/StyleOptions';
 import Transmission from '../components/TransmissionOptions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCar, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faCar, faSearch } from '@fortawesome/free-solid-svg-icons';
+import Favicon from 'react-favicon';
 
 
 class CarListFilters extends React.Component {
@@ -13,6 +14,7 @@ class CarListFilters extends React.Component {
     render() {
         return (
             <div>
+            <Favicon url="/public/resources/car-solid.svg"/>
             <h1 className='main_title'><span><FontAwesomeIcon icon={faCar} /></span> React Car Search <span><FontAwesomeIcon icon={faSearch} /></span></h1>
             <Options/>
             <StyleOptions/>
