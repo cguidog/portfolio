@@ -1,24 +1,33 @@
-.filter {
-    border: none;
-    appearance: none;
-    background: $bdy-bckgnd;
-    width: 80%;
-    text-align: center;
-    font-size: 2rem;
-    border-bottom: solid $container;
-    margin-bottom: 1rem;
-    margin-left: 10%;
-}
-
 .checkbox {
     margin: 0 0 1% 10%;
 }
 
-.label {
-    font-size: 2rem;
+.filter {
+    appearance: none;
+    background: $bdy-bckgnd;
     border: none;
+    border-bottom: solid $container;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 10%;
+    text-align: center;
+    width: 80%;
 }
 
 .filter_container {
     margin-bottom:1%;
+}
+
+.label {
+    border: none;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*='checkbox'] {
+        margin-left: 15%;
+        text-align: left;
+    }
+
 }
