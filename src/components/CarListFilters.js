@@ -13,7 +13,7 @@ class CarListFilters extends React.Component {
     state = {};
     render() {
         return (
-            <div>
+            <div className='title_div'>
             <Favicon url="/public/resources/car-solid.svg"/>
             <h1 className='main_title'><span><FontAwesomeIcon icon={faCar} /></span> React Car Search <span><FontAwesomeIcon icon={faSearch} /></span></h1>
             <Options/>

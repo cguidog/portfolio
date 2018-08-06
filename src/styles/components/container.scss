@@ -22,7 +22,9 @@
     padding-top: 2%;
     padding-bottom: 2%;
 }
-
+.list_div {
+    padding-top: 30rem;
+}
 .title {
     width: 100%;
     max-height: 10%;
@@ -36,6 +38,12 @@
     width: 100%;
     max-height: 10%;
     color: $titles;
+}
+
+.title_div {
+    position: fixed;
+    width: 100%;
+    background-color: $bdy-bckgnd;
 }
 
 @media only screen and (max-width: 768px) {
