@@ -1,17 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom';
-import CarDashboardPage from '../components/CarDashboardPage';
-// import AddExpensePage from '../components/AddExpensePage';
-// import EditExpensePage from '../components/EditExpensePage';
-// import HelpPage from '../components/HelpPage';
-// import NotFoundPage from '../components/NotFoundPage';
-// import Header from '../components/Header';
+import ProjectDashboardPage from '../components/ProjectDashboardPage';
+
 
 const AppRouter = () => (
   <BrowserRouter>
     <div>
       <Switch>
-        <Route path="/" component={CarDashboardPage} exact={true} />
+        <Route path="/" component={ProjectDashboardPage} exact={true} />
       </Switch>
     </div>
   </BrowserRouter>

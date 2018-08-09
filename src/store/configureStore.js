@@ -1,11 +1,11 @@
 import {createStore, combineReducers} from 'redux';
-import carsReducer from '../reducers/cars';
+import projectsReducer from '../reducers/projects';
 import filtersReducer from '../reducers/filters';
 
 export default () => {
     const store = createStore(
       combineReducers({
-        cars: carsReducer,
+        projects: projectsReducer,
         filters: filtersReducer
       }),
 
