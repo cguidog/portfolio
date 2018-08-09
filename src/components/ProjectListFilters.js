@@ -11,7 +11,7 @@ class ProjectListFilters extends React.Component {
             <h1 onClick={() => {
                 if (this.props.filters.tool.includes('none')) {
                 this.props.dispatch(setToolFilterRemove(''))} else {this.props.filters.tool = ['none']};
-                console.log(this.props.filters)
+                console.log(this.props.filters);
             }} >ALL</h1>
             <h1 onClick={() => {
                 if (this.props.filters.tool.indexOf('html') === -1) {
