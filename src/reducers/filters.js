@@ -1,6 +1,7 @@
 const filtersReducerDefaultState = {
     tool: [],
-    show: true
+    show: true,
+    toolList: []
 };
 
 export default (state = filtersReducerDefaultState, action) => {

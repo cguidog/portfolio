@@ -10,10 +10,12 @@ import './styles/styles.scss';
 
 const store = configureStore();
 
-store.dispatch(addProject({tool:'html'}))
-store.dispatch(addProject({tool:'css'}))
-store.dispatch(addProject({tool:'react'}))
-store.dispatch(addProject({tool:'jquery'}))
+store.dispatch(addProject({name: '', thumbnail: '', git: '', description: 'Enter text here', link: '', tool:'html'}))
+store.dispatch(addProject({name: '', thumbnail: '', git: '', description: 'Enter text here', link: '', tool:'css'}))
+store.dispatch(addProject({name: 'React Car Search', thumbnail: '/resources/react_car_search.png', git: 'https://github.com/cguidog/carDisplay', description: 'Enter text here', link: 'https://react-car-search.herokuapp.com', tool:'react'}))
+store.dispatch(addProject({name: '', thumbnail: '', git: '', description: 'Enter text here', link: '', tool:'jquery'}))
+store.dispatch(addProject({name: '', thumbnail: '', git: '', description: 'Enter text here', link: '', tool:'jquery'}))
+store.dispatch(addProject({name: '', thumbnail: '', git: '', description: 'Enter text here', link: '', tool:'jquery'}))
 
 
 const jsx = (

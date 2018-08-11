@@ -1,8 +1,12 @@
 import React from 'react';
 
-const ProjectListItem = ({tool}) => (
+const ProjectListItem = ({name, thumbnail, description, link, git}) => (
     <div>
-    <p>{tool}</p>
+    <img src={thumbnail}/>
+    <h4>{name}</h4>
+    <p>{description}</p>
+    <a href={link}>Visit</a>
+    <a href={git}>GitHub</a>
     </div>
 );
 

@@ -1,11 +1,13 @@
 import React from 'react';
 import ProjectList from './ProjectList';
-import ProjectListFilters from './ProjectListFilters';
+import ProjectFilter from './ProjectFilter';
+import ProjectAll from './ProjectAll';
 
 const ProjectDashboardPage = () => (
     <div>
         <div>
-            <ProjectListFilters/>
+            <ProjectAll/>
+            <ProjectFilter/>
             <ProjectList/>
         </div>
     </div>
