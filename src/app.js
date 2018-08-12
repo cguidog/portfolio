@@ -10,12 +10,12 @@ import './styles/styles.scss';
 
 const store = configureStore();
 
-store.dispatch(addProject({name: '', thumbnail: '', git: '', description: 'Enter text here', link: '', tool:'html'}))
-store.dispatch(addProject({name: '', thumbnail: '', git: '', description: 'Enter text here', link: '', tool:'css'}))
+store.dispatch(addProject({name: '', thumbnail: '/resources/coming_soon.png', git: '', description: 'Enter text here', link: '', tool:'html'}))
+store.dispatch(addProject({name: '', thumbnail: '/resources/coming_soon.png', git: '', description: 'Enter text here', link: '', tool:'css'}))
 store.dispatch(addProject({name: 'React Car Search', thumbnail: '/resources/react_car_search.png', git: 'https://github.com/cguidog/carDisplay', description: 'Enter text here', link: 'https://react-car-search.herokuapp.com', tool:'react'}))
-store.dispatch(addProject({name: '', thumbnail: '', git: '', description: 'Enter text here', link: '', tool:'jquery'}))
-store.dispatch(addProject({name: '', thumbnail: '', git: '', description: 'Enter text here', link: '', tool:'jquery'}))
-store.dispatch(addProject({name: '', thumbnail: '', git: '', description: 'Enter text here', link: '', tool:'jquery'}))
+store.dispatch(addProject({name: 'RGB Color Guessing Game', thumbnail: '/resources/rgb_game.png', git: '', description: 'Enter text here', link: '', tool:'javascript'}))
+store.dispatch(addProject({name: '', thumbnail: '/resources/coming_soon.png', git: '', description: 'Enter text here', link: '', tool:'jquery'}))
+store.dispatch(addProject({name: '', thumbnail: '/resources/coming_soon.png', git: '', description: 'Enter text here', link: '', tool:'jquery'}))
 
 
 const jsx = (
