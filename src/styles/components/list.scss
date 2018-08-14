@@ -1,0 +1,27 @@
+.item {
+    float: left;
+    width: 45%;
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*='item'] {
+        width: 100%;
+    }
+
+}
+
+.item_container {
+    width: 100%;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+
+}
+
+.thumbnail {
+    width: 80%;
+    margin: auto;
+}
+

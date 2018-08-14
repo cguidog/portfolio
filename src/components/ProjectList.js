@@ -4,7 +4,7 @@ import ProjectListItem from './projectListItem';
 import selectProjects from '../selectors/projects';
 
 const ProjectList = (props) => (
-    <div>
+    <div className='item_container'>
         {props.projects.map((project) => {
             return <ProjectListItem key={project.id} {...project} />
         })}
