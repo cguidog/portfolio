@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {setShowFilter, setToolFilterClean} from '../actions/filters';
+import {setShowFilter, setToolFilterClean, setStyleFilterClean} from '../actions/filters';
 
 const ProjectAll = (props) => ( 
 
@@ -9,10 +9,12 @@ const ProjectAll = (props) => (
     if (props.filters.show) {
         props.dispatch(setShowFilter(false));
         props.dispatch(setToolFilterClean());
+        props.dispatch(setStyleFilterClean());
         
     } else {
         props.dispatch(setShowFilter(true));
         props.dispatch(setToolFilterClean());
+        props.dispatch(setStyleFilterClean());
     }    
 }} >All</button>
 )

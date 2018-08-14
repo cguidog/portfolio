@@ -7,7 +7,7 @@ const ProjectDashboardPage = () => (
     <div>
         <div>
             <ProjectAll/>
-            <ProjectFilter/>
+            <ProjectFilter/><br/>
             <ProjectList/>
         </div>
     </div>
