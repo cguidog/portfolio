@@ -24,7 +24,7 @@ const ProjectFilter = (props) => (
                                   props.dispatch(setStyleFilterRemove(props.filters.toolList.indexOf(tool)));
                                   console.log(props.filters.selected);
                                 };
-                            }} >{tool.toUpperCase()}</h2></div>
+                            }} >{tool.toUpperCase()}</h2><div className={props.filters.selected.includes(props.filters.toolList.indexOf(tool)) ? 'switch' : 'switch_Active'}></div></div>
                         })
                     }
     </div>   

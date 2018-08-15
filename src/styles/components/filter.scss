@@ -1,14 +1,10 @@
 .active {
-    color: red;
+    transition: color 0.5s ease;
+    color: $selected;
+    text-shadow: 2px 2px 2px #fff1d1;
     float: left;
     width: 33%;
     text-align: center;
-}
-.not_Active {
-    color: rgb(44, 182, 106);
-    float: left;
-    width: 33%;
-    text-align: center; 
 }
 
 @media only screen and (max-width: 768px) {
@@ -19,10 +15,39 @@
 
 }
 
+.not_Active {
+    transition: color 0.5s ease;
+    color: $not_selected;
+    text-shadow: 2px 2px 0px #fff5df;
+    float: left;
+    width: 33%;
+    text-align: center; 
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*='not_Active'] {
         width: 100%;
     }
 
+}
+
+.switch_Active {
+    border-radius: 50%;
+    background-color: $not_selected;
+    width: 20px;
+    height: 20px;
+    transition: background-color 5s ease;
+    transition: margin-left 0.5s ease;
+    margin-left: 45%;
+}
+
+.switch {
+    background-color: $selected;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: background-color 5s ease;
+    transition: margin-left 0.5s ease;
+    margin-left: 50%;
 }
