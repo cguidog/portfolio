@@ -1,9 +1,18 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {setToolFilter, setToolFilterRemove, setShowFilter, setStyleFilter, setStyleFilterRemove} from '../actions/filters';
+import {setToolFilter, setToolFilterRemove, setShowFilter, setStyleFilter, setStyleFilterRemove, setToolFilterClean,setStyleFilterClean} from '../actions/filters';
 
 const ProjectFilter = (props) => ( 
     <div>
+    <div className={props.filters.show ? 'active' : 'not_Active'} >
+    <h2 onClick={() => {
+        if (!props.filters.show) {
+            props.dispatch(setShowFilter(true));
+            props.dispatch(setToolFilterClean());
+            props.dispatch(setStyleFilterClean());
+        }    
+    }} >ALL</h2>
+    <div className={props.filters.show ? 'switch' : 'switch_Active'}></div></div>
               {  props.projects.map((project)=> {
                     if (props.filters.toolList.indexOf(project.tool) === -1) {
                         props.filters.toolList.push(project.tool);
@@ -17,7 +26,7 @@ const ProjectFilter = (props) => (
                             return <div className={props.filters.selected.includes(props.filters.toolList.indexOf(tool)) ? 'active' : 'not_Active'} key={tool}><h2 key={props.filters.toolList.indexOf(tool)} onClick={() => {
                                 if (props.filters.tool.indexOf(tool) === -1) {
                                     props.dispatch(setToolFilter(tool));
-                                    props.dispatch(setShowFilter(true));
+                                    props.dispatch(setShowFilter(false));
                                     props.dispatch(setStyleFilter(props.filters.toolList.indexOf(tool)));
                                     console.log(props.filters.selected);
                             } else {props.dispatch(setToolFilterRemove(tool));
