@@ -1,9 +1,14 @@
 .item {
     float: left;
+    overflow: hidden;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     width: 45%;
+    max-height: 5%;
+    align-content: center;
 
 }
-
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*='item'] {
@@ -17,11 +22,28 @@
     margin: auto;
     align-content: center;
     text-align: center;
-
 }
 
-.thumbnail {
-    width: 80%;
-    margin: auto;
+.item_detail {
+    width: 45%;
+    position: absolute;
+    float: left;
+    background-color: $selected;opacity:0;
+}
+:hover.item_detail {
+    background-color: $selected;opacity:0.3;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
 }
 
+.item img {
+    max-width: 100%;
+    
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .item:hover img {
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+  }

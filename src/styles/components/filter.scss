@@ -1,6 +1,7 @@
 .active {
     transition: color 0.5s ease;
     color: $selected;
+    cursor: default;
     text-shadow: 2px 2px 2px #f3f3f3;
     float: left;
     width: 25%;
@@ -19,6 +20,7 @@
 .not_Active {
     transition: color 0.5s ease;
     color: $not_selected;
+    cursor: default;
     text-shadow: 2px 2px 0px #f3f3f3;
     float: left;
     width: 25%;
