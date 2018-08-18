@@ -1,0 +1,178 @@
+
+/*****Home Div*****/
+#welcome {
+    height: 100rem;
+}
+
+@media only screen and (max-width: 768px) {
+    /***** For mobile phones: *****/
+    #welcome {
+        height: 50rem;
+    }
+}
+
+/*****Carlos Guido Guido*****/
+.head {
+    color: $titles;
+    float: left;
+    margin: 1rem 0 2rem 1rem;
+    font-size: 6rem;
+    text-shadow: 1px 1px 1px $shadow;
+}
+
+@media only screen and (max-width: 768px) {
+    /***** For mobile phones: *****/
+    [class*='head'] {
+        float: none;
+        font-size: 3rem;
+        margin: 2rem auto auto auto;
+        text-align: center;
+    }
+}
+
+/*****Front-end Developer subtitle*****/
+#sub {
+    animation: slide 1.5s forwards;
+    -webkit-animation: slide 1.5s forwards;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    color: $selected;
+    font-size: 4rem;
+    margin: auto;
+    padding: 2.5rem;
+    position: absolute;
+    right: -100rem;
+    text-shadow: 1px 1px 1px $shadow;
+}
+@media only screen and (max-width: 768px) {
+    /***** For mobile phones: *****/
+    #sub {
+        float: none;
+        font-size: 2rem;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+/*****Subtitle animation*****/
+@media only screen and (max-width: 768px) {
+    /***** For mobile phones: *****/
+    @keyframes slide {
+        100% { right: 0%; }
+    }
+    @-webkit-keyframes slide {
+        100% { right: 0%; }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    /***** For Desktop: *****/
+    @keyframes slide {
+        100% { right: 75rem; }
+    }
+    @-webkit-keyframes slide {
+        100% { right: 75rem; }
+    }
+}
+
+/*****Menu*****/
+.menu {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    margin: 2rem;
+    animation: appear 2s forwards;
+    -webkit-animation: appear 2s forwards;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+/***** Menu animation *****/
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media only screen and (max-width: 768px) {
+    /***** For mobile phones: *****/
+    [class*='menu'] {
+        width: 10%;
+    }
+}
+
+.menu a {
+    color: $titles;
+    font-size: 5rem;
+    margin: 1rem;
+    text-shadow: 1px 1px 1px $shadow;
+}
+
+@media only screen and (max-width: 768px) {
+    /***** For mobile phones: *****/
+    .menu a {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 769px){
+    .menu a:hover {
+        color: $selected;
+    }
+}
+
+/*****About me *****/
+.text_box p {
+    font-size: 3rem;
+    width: 40%;
+    border: 1px solid $selected;
+    color: $not_selected;
+}
+
+@media only screen and (max-width: 768px) {
+    /***** For mobile phones: *****/
+    [class*='text_box'] p {
+        font-size: 1rem;
+    }
+}
+
+#about {
+    padding: 2rem;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+    /***** For mobile phones: *****/
+    #about {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+    }
+}
+
+#tech {
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    /***** For mobile phones: *****/
+    #tech {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+    }
+}
+/***** General use *****/
+.titles {
+    border-bottom: 2px solid $selected;
+    color: $titles;
+    font-size: 5rem;
+    margin: 0 3rem 5rem 3rem;
+    padding-bottom: 2rem;
+    text-shadow: 1px 1px 1px $shadow;
+}
+

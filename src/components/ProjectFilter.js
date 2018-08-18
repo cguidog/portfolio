@@ -4,6 +4,8 @@ import {setToolFilter, setToolFilterRemove, setShowFilter, setStyleFilter, setSt
 
 const ProjectFilter = (props) => ( 
     <div>
+        <h2 id='projects' className='titles'>Projects</h2>
+        <h2 className='filter_title'>Would you like to filter?</h2>
         <div className={props.filters.show ? 'active' : 'not_Active'} //Filter reset.
             onClick={() => {
             if (!props.filters.show) {
@@ -12,7 +14,7 @@ const ProjectFilter = (props) => (
                 props.dispatch(setStyleFilterClean());
             }    
         }}>
-            <h2>ALL</h2>
+            <h2>All</h2>
             <div className={props.filters.show ? 'switch' : 'switch_Active'}></div>
         </div>
 
@@ -35,7 +37,7 @@ const ProjectFilter = (props) => (
                             props.dispatch(setStyleFilterRemove(props.filters.toolList.indexOf(tool)));
                         };
                     }}>
-                        <h2 key={props.filters.toolList.indexOf(tool)}>{tool.toUpperCase()}</h2>
+                        <h2 key={props.filters.toolList.indexOf(tool)}>{tool}</h2>
                         <div className={props.filters.selected.includes(props.filters.toolList.indexOf(tool)) ? 'switch' : 'switch_Active'}>
                         </div>
                     </div>
