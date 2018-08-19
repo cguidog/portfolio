@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ProjectListItem from './projectListItem';
+//import ProjectListItem from './projectListItem';
 import selectProjects from '../selectors/projects';
 
 const ProjectList = (props) => (

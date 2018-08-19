@@ -9,7 +9,6 @@ const ProjectDashboardPage = () => (
         <div>
             <Home/>
             <ProjectFilter/><br/>
-            <ProjectList/><br/>
             <Contact/>
         </div>
     </div>
