@@ -31,6 +31,10 @@
     }
 }
 
+.block {
+    width: 100%;
+}
+
 /*****Front-end Developer subtitle*****/
 #sub {
     animation: slide 1.5s forwards;
@@ -87,8 +91,8 @@
     margin: 4rem 1rem 0 0 ;
     animation: appear 2s forwards;
     -webkit-animation: appear 2s forwards;
-    animation-delay: 1s;
-    -webkit-animation-delay: 1s;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
     width: 5%;
 }
 /***** Menu animation *****/
@@ -99,7 +103,7 @@
 
 @media only screen and (max-width: 768px) {
     /***** For mobile phones: *****/
-    [class*='menu'] {
+    .menu {
         width: 10%;
         margin: 4rem 0.5rem 0 0;
         text-align: center;
@@ -122,7 +126,7 @@
 }
 
 @media only screen and (min-width: 769px){
-    .menu a:hover {
+    .menu a i:hover {
         color: $selected;
     }
 }
@@ -153,6 +157,7 @@
     /***** For mobile phones: *****/
     #about {
         position: absolute;
+        margin: 2rem;
         top: 20%;
         left: 10%;
     }
@@ -169,7 +174,8 @@
     /***** For mobile phones: *****/
     #tech {
         position: absolute;
-        top: 35%;
+        margin: 2rem;
+        top: 45%;
         left: 35%;
     }
 }
@@ -178,9 +184,9 @@
     border-bottom: 2px solid $selected;
     color: $titles;
     font-size: 5rem;
-    margin: 0 3rem 5rem 3rem;
-    padding-bottom: 2rem;
+    margin: 3rem;
     text-shadow: 1px 1px 1px $shadow;
+    width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -195,7 +201,7 @@
 .links {
     text-align: center;
     display: block;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 @media only screen and (min-width: 769px) {

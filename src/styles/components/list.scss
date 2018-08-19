@@ -8,17 +8,34 @@
     margin-left:6.66%;
     margin-bottom: 3%;
     overflow: hidden;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 45%;
+    max-height: 5%;
     position: relative;
     width: 40%;
 }
-
-@media only screen and (max-width: 768px) {
+ @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    [class*='item'] {
+    .item {
+        width: 100%;
         height: 100%;
-        margin: 3% 15% 3% 15%;
-        width: 70%;
+        margin-left: 0;
     }
+ }
+ .item_container {
+    width: 100%;
+    overflow: hidden;
+ }
+ @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+ .item_container {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    padding: 0;
+ }
 }
 
 .item a {
@@ -28,7 +45,7 @@
     color: $titles;
 }
 
-.item_detail {
+ .item_detail {
     background-color: $selected;
     float: left;
     left: 50%;
@@ -44,10 +61,13 @@
     transition: all 1s;
     width: 100%;
 }
-
-@media only screen and (max-width: 768px) {
+:hover.item_detail {
+    background-color: $selected;opacity:0.3;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+}
+ @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    [class*='item_detail'] {
+    .item_detail {
         float: initial;
         height: 80%;
         margin: 0;
@@ -57,45 +77,46 @@
         top: 100%;
     }
 }
-
+ .item img {
+    max-width: 100%;
+ }
 .item:hover .item_detail {
     opacity: 1;
 }
 
-.item:hover .thumbnail {
+ .item:hover .thumbnail {
     opacity: 0.5;
 }
 
-.item_detail p {
+ .item_detail p {
     margin-bottom: 0;
     padding-bottom: 1rem;
 }
 
-.thumbnail {
+ .thumbnail {
     display: block;
     height: 40rem;
     width: 100%;
     transition: all 0.5s;
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
-
-  }
-
-  .thumbnail:hover {
+    transition: all 0.5s;
+   }
+  .item:hover img {
+   .thumbnail:hover {
     display: block;
     -moz-transform: scale(2);
     -webkit-transform: scale(2);
     transform: scale(2);
   }
-
-  @media only screen and (max-width: 768px) {
+}
+   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    [class*='thumbnail'] {
+    .thumbnail {
         float: none;
         height: 100%;
-        margin-bottom: 5rem;
+        margin: 0 0 5rem 0;
         opacity: 1;
-        padding-bottom: 5rem;
+        padding-bottom: 0 0 5rem 0;
     }
-}
-
+   }

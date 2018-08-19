@@ -29,10 +29,9 @@
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    [class*='active'] {
+    .active {
         width: 35%;
-        margin-bottom: 2px;
-        margin-left: 10%;
+        margin: 0 0 5% 10%;
     }
 
 }
@@ -50,12 +49,25 @@
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    [class*='not_Active'] {
+    .not_Active {
         width: 35%;
-        margin-bottom: 2px;
-        margin-left: 10%;
+        margin: 0 0 5% 10%;
     }
 
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .not_Active h2 {
+        margin: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .active h2 {
+        margin: 0.5rem;
+    }
 }
 
 .switch_Active {
