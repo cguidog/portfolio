@@ -8,6 +8,14 @@
     width: 80%;
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .filter_title {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+}
+
 .active {
     transition: color 0.5s ease;
     color: $selected;
@@ -22,8 +30,9 @@
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*='active'] {
-        width: 50%;
-        margin-bottom: 1rem;
+        width: 35%;
+        margin-bottom: 2px;
+        margin-left: 10%;
     }
 
 }
@@ -42,8 +51,9 @@
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*='not_Active'] {
-        width: 50%;
-        margin-bottom: 1rem;
+        width: 35%;
+        margin-bottom: 2px;
+        margin-left: 10%;
     }
 
 }
