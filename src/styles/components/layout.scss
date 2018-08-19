@@ -7,7 +7,7 @@
 @media only screen and (max-width: $mobile) {
     /***** For mobile phones: *****/
     #welcome {
-        height: 50rem;
+        height: 90rem;
     }
 }
 
@@ -46,7 +46,7 @@
     margin: auto;
     padding: 2.5rem;
     position: absolute;
-    right: -100rem;
+    right: -40rem;
     text-shadow: 1px 1px 1px $shadow;
 }
 @media only screen and (max-width: $mobile) {
@@ -132,22 +132,24 @@
 }
 
 /*****About me *****/
-.text_box p {
+.text_box p{
     font-size: 3rem;
-    width: 40%;
-    border: 1px solid $selected;
+    width: 50%;
     color: $not_selected;
 }
 
 @media only screen and (max-width: $mobile) {
     /***** For mobile phones: *****/
     [class*='text_box'] p {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        text-align: justify
     }
 }
 
 #about {
-    padding: 2rem;
+    border-bottom: 1px solid $selected;
+    border-right: 1px solid $selected;
+    padding: 1rem;
     position: absolute;
     top: 25%;
     left: 10%;
@@ -156,27 +158,33 @@
 @media only screen and (max-width: $mobile) {
     /***** For mobile phones: *****/
     #about {
+        border-bottom: 1px solid $selected;
+        border-right: 1px solid $selected;
         position: absolute;
-        margin: 2rem;
+        margin: 1rem;
         top: 20%;
-        left: 10%;
+        left: 5%;
     }
 }
 
 #tech {
-    padding: 2rem;
+    border-top: 1px solid $selected;
+    border-left: 1px solid $selected;
+    padding: 1rem;
     position: absolute;
     top: 50%;
-    left: 50%;
+    right: 10%;
 }
 
 @media only screen and (max-width: $mobile) {
     /***** For mobile phones: *****/
     #tech {
+        border-top: 1px solid $selected;
+        border-left: 1px solid $selected;
         position: absolute;
-        margin: 2rem;
+        margin: 1rem;
         top: 45%;
-        left: 35%;
+        right: 5%;
     }
 }
 /***** General use *****/
@@ -222,4 +230,44 @@
     .links a{
         font-size: 4rem;
     }
+}
+
+.random {
+    float: left;
+    color: $not_selected;
+    opacity: 0.2;
+    font-size: 50rem;
+    position: relative;
+    left: 0%;
+    bottom: -25rem;
+    -webkit-animation-name: random; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: random;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+
+}
+
+@media only screen and (max-width: $mobile) {
+    /***** For mobile phones: *****/
+    .random{
+        font-size: 20rem;
+        text-align: center
+    }
+}
+
+@-webkit-keyframes random {
+    0%  {opacity: 0}
+    25% {opacity: 0.2; left: 0%;}
+    50% {opacity: 0}
+    100% {opacity: 0.2; left: 0%;}
+}
+
+@keyframes random {
+    0%  {opacity: 0}
+    25% {opacity: 0.2; left: 0%;}
+    50% {opacity: 0}
+    100% {opacity: 0.2; left: 0%;}
 }
