@@ -16,7 +16,7 @@
     position: relative;
     width: 40%;
 }
- @media only screen and (max-width: 768px) {
+ @media only screen and (max-width: $mobile) {
     /* For mobile phones: */
     .item {
         width: 100%;
@@ -28,7 +28,7 @@
     width: 100%;
     overflow: hidden;
  }
- @media only screen and (max-width: 768px) {
+ @media only screen and (max-width: $mobile) {
     /* For mobile phones: */
  .item_container {
     width: 80%;
@@ -65,7 +65,7 @@
     background-color: $selected;opacity:0.3;
     transition: background-color 0.5s ease, opacity 0.5s ease;
 }
- @media only screen and (max-width: 768px) {
+ @media only screen and (max-width: $mobile) {
     /* For mobile phones: */
     .item_detail {
         float: initial;
@@ -110,7 +110,7 @@
     transform: scale(2);
   }
 }
-   @media only screen and (max-width: 768px) {
+   @media only screen and (max-width: $mobile) {
     /* For mobile phones: */
     .thumbnail {
         float: none;

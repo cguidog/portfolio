@@ -8,7 +8,7 @@
     width: 80%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $mobile) {
     /* For mobile phones: */
     .filter_title {
         width: 70%;
@@ -27,7 +27,7 @@
     margin-bottom: 2rem; 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $mobile) {
     /* For mobile phones: */
     .active {
         width: 35%;
@@ -47,7 +47,7 @@
     margin-bottom: 2rem; 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $mobile) {
     /* For mobile phones: */
     .not_Active {
         width: 35%;
@@ -56,14 +56,14 @@
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $mobile) {
     /* For mobile phones: */
     .not_Active h2 {
         margin: 0.5rem;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $mobile) {
     /* For mobile phones: */
     .active h2 {
         margin: 0.5rem;
