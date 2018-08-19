@@ -13,10 +13,10 @@
     "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.2.0",
-    "@fortawesome/free-regular-svg-icons": "^5.1.0-11",
-    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/free-regular-svg-icons": "^5.2.0",
+    "@fortawesome/free-solid-svg-icons": "^5.2.0",
     "@fortawesome/react-fontawesome": "0.1.0-11",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
@@ -27,12 +27,13 @@
     "babel-preset-react": "6.24.1",
     "css-loader": "^0.28.11",
     "express": "^4.16.3",
-    "hoek": "^5.0.3",
+    "hoek": "^5.0.4",
     "i": "^0.3.6",
     "live-server": "^1.2.0",
     "moment": "^2.22.2",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.9.3",
     "normalize.css": "^8.0.0",
+    "npm": "^5.6.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-favicon": "0.0.14",
@@ -42,18 +43,14 @@
     "redux": "^4.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
-    "uuid": "^3.2.1",
+    "uuid": "^3.3.2",
     "validator": "^9.4.1",
-    "webpack": "^4.16.4",
+    "webpack": "^4.16.5",
     "webpack-dev-server": "^3.1.5",
-    "yarn": "^1.7.0"
+    "yarn": "^1.9.4"
   },
   "devDependencies": {
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "webpack-cli": "^2.1.5"
-  },
-  "engines": {
-    "node": "^9.10.0",
-    "npm": "^5.6.0"
   }
 }
