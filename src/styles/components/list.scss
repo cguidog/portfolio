@@ -68,6 +68,7 @@
  @media only screen and (max-width: $mobile) {
     /* For mobile phones: */
     .item_detail {
+        font-size: 1.5rem;
         float: initial;
         height: 80%;
         margin: 0;
@@ -75,6 +76,10 @@
         padding-bottom: 2rem;
         position: absolute;
         top: 100%;
+    }
+    .item h4 {
+        padding: 0;
+        margin: 0.5rem auto auto 0.5rem;
     }
 }
  .item img {
@@ -93,6 +98,13 @@
     padding-bottom: 1rem;
 }
 
+@media only screen and (max-width: $mobile) {
+    /* For mobile phones: */
+    .item_detail p {
+        margin: auto;
+        padding: 0;
+    }
+}
  .thumbnail {
     display: block;
     height: 40rem;
