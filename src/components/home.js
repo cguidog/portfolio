@@ -1,6 +1,5 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons'
 
 const Home = () => (
@@ -9,9 +8,11 @@ const Home = () => (
             <h1 className='head'>{'<CarlosGuidoGuido/>'}</h1>
             <h3 id='sub'>Front-end developer</h3>
             <div className='text_box'>
-            <p id='about'>Passionate professional who loves to create: from building furniture to designing clothes, to tiling kitchens to writing code.</p>
-            <p id='tech'>I build responsive web applications using HTML, CSS and Javascript. I have experience working with Javascript libraries like ReactJS and Jquery
-                and enjoy giving style to my creations with Sass and Bootstrap.</p>
+            <p id='about'>A passionate professional and self-taught front-end developer who loves to create: from building furniture to designing clothes, from tiling kitchens to writing code.
+            I simply love the satisfying feeling of turning ideas in to reality.</p>
+            <p id='tech'>I build responsive web applications using HTML, CSS and JavaScript. I have experience working with JavaScript libraries such as ReactJS and Jquery
+                and enjoy giving style to my creations with Sass and Bootstrap. Since I started this journey, I've discovered that there is always something new to learn; I've accepted the
+                challenge and I am enjoying every part of it.</p>
             <span className='animat'><FontAwesomeIcon icon={faCode} /></span>
             </div>
         </div>
