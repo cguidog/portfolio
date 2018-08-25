@@ -22,7 +22,7 @@
 
 @media only screen and (max-width: $mobile) {
     /***** For mobile phones: *****/
-    [class*='head'] {
+    .head {
         float: none;
         font-size: 2rem;
         margin: 2rem auto auto 2rem;
@@ -75,60 +75,20 @@
 @media only screen and (min-width: $mobile + 1) {
     /***** For Desktop: *****/
     @keyframes slide {
-        100% { right: 57rem; }
+        100% { right: 10%; }
     }
     @-webkit-keyframes slide {
-        100% { right: 57rem; }
+        100% { right: 10%; }
     }
 }
 
-/*****Menu*****/
-.menu {
-    opacity: 0;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    float: right;
-    margin: 4rem 1rem 0 0 ;
-    animation: appear 2s forwards;
-    -webkit-animation: appear 2s forwards;
-    animation-delay: 2s;
-    -webkit-animation-delay: 2s;
-    width: 5%;
-}
-/***** Menu animation *****/
-@keyframes appear {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@media only screen and (max-width: $mobile) {
-    /***** For mobile phones: *****/
-    .menu {
-        width: 4%;
-        margin: 5rem 2rem 0 0;
-        text-align: center;
+@media only screen and (min-width: $mobile + 500) {
+    /***** For Desktop: *****/
+    @keyframes slide {
+        100% { right: 45%; }
     }
-}
-
-.menu a i {
-    color: $titles;
-    font-size: 5rem;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 1px $shadow;
-}
-
-@media only screen and (max-width: $mobile) {
-    /***** For mobile phones: *****/
-    .menu a i {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-}
-
-@media only screen and (min-width: $mobile + 1){
-    .menu a i:hover {
-        color: $selected;
+    @-webkit-keyframes slide {
+        100% { right: 45%; }
     }
 }
 
@@ -141,7 +101,7 @@
 
 @media only screen and (max-width: $mobile) {
     /***** For mobile phones: *****/
-    [class*='text_box'] p {
+    .text_box p {
         font-size: 1.5rem;
         text-align: justify
     }
@@ -173,7 +133,7 @@
     border-left: 1px solid $selected;
     padding: 1rem;
     position: absolute;
-    top: 50%;
+    top: 55%;
     right: 10%;
 }
 
@@ -233,7 +193,7 @@
     }
 }
 
-.random {
+.animat {
     float: left;
     color: $not_selected;
     opacity: 0.2;
@@ -241,10 +201,10 @@
     position: relative;
     left: 0%;
     bottom: -25rem;
-    -webkit-animation-name: random; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: animat; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
     -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
-    animation-name: random;
+    animation-name: animat;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 
@@ -253,22 +213,18 @@
 
 @media only screen and (max-width: $mobile) {
     /***** For mobile phones: *****/
-    .random{
+    .animat{
         font-size: 20rem;
         text-align: center
     }
 }
 
-@-webkit-keyframes random {
-    0%  {opacity: 0}
-    25% {opacity: 0.2; left: 0%;}
-    50% {opacity: 0}
-    100% {opacity: 0.2; left: 0%;}
+@-webkit-keyframes animat {
+    25% {opacity: 0}
+
 }
 
-@keyframes random {
-    0%  {opacity: 0}
-    25% {opacity: 0.2; left: 0%;}
-    50% {opacity: 0}
-    100% {opacity: 0.2; left: 0%;}
+@keyframes animat {
+    25% {opacity: 0}
+
 }

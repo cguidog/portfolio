@@ -70,7 +70,7 @@
     .item_detail {
         font-size: 1.5rem;
         float: initial;
-        height: 80%;
+        height: 40%;
         margin: 0;
         opacity: 1;
         padding-bottom: 2rem;
@@ -107,7 +107,7 @@
 }
  .thumbnail {
     display: block;
-    height: 40rem;
+    height: 100%;
     width: 100%;
     transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -126,8 +126,30 @@
     /* For mobile phones: */
     .thumbnail {
         float: none;
+        height: 18rem;
+        margin: 0;
+        opacity: 1;
+        padding-bottom: 0 0 5rem 0;
+    }
+   }
+
+   @media only screen and (min-width: $mobile + 1) {
+    /* For small to medium screens: */
+    .thumbnail {
+        float: none;
+        height: 25rem;
+        margin: 0;
+        opacity: 1;
+        padding-bottom: 0 0 5rem 0;
+    }
+   }
+
+   @media only screen and (min-width: $mobile + 500) {
+    /* For small to medium screens: */
+    .thumbnail {
+        float: none;
         height: 100%;
-        margin: 0 0 5rem 0;
+        margin: 0;
         opacity: 1;
         padding-bottom: 0 0 5rem 0;
     }
