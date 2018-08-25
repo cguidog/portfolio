@@ -1,0 +1,49 @@
+/*****Menu*****/
+.menu {
+    opacity: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    float: right;
+    margin: 4rem 1rem 0 0 ;
+    animation: appear 2s forwards;
+    -webkit-animation: appear 2s forwards;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    width: 5%;
+}
+/***** Menu animation *****/
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media only screen and (max-width: $mobile) {
+    /***** For mobile phones: *****/
+    .menu {
+        width: 4%;
+        margin: 5rem 2rem 0 0;
+        text-align: center;
+    }
+}
+
+.menu a i {
+    color: $titles;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 1px $shadow;
+}
+
+@media only screen and (max-width: $mobile) {
+    /***** For mobile phones: *****/
+    .menu a i {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (min-width: $mobile + 1){
+    .menu a i:hover {
+        color: $selected;
+    }
+}
