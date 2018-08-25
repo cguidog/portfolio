@@ -1,4 +1,4 @@
-/* Portfolio Projects*/
+/***** Portfolio Projects*****/
 
 .item {
     align-content: center;
@@ -17,7 +17,7 @@
     width: 40%;
 }
  @media only screen and (max-width: $mobile) {
-    /* For mobile phones: */
+    /***** For mobile phones: *****/
     .item {
         width: 100%;
         height: 100%;
@@ -29,7 +29,7 @@
     overflow: hidden;
  }
  @media only screen and (max-width: $mobile) {
-    /* For mobile phones: */
+    /***** For mobile phones: *****/
  .item_container {
     width: 80%;
     overflow: hidden;
@@ -66,7 +66,7 @@
     transition: background-color 0.5s ease, opacity 0.5s ease;
 }
  @media only screen and (max-width: $mobile) {
-    /* For mobile phones: */
+    /***** For mobile phones: *****/
     .item_detail {
         font-size: 1.5rem;
         float: initial;
@@ -99,7 +99,7 @@
 }
 
 @media only screen and (max-width: $mobile) {
-    /* For mobile phones: */
+    /***** For mobile phones: *****/
     .item_detail p {
         margin: auto;
         padding: 0;
@@ -123,7 +123,7 @@
   }
 }
    @media only screen and (max-width: $mobile) {
-    /* For mobile phones: */
+    /***** For mobile phones: *****/
     .thumbnail {
         float: none;
         height: 18rem;
@@ -134,21 +134,21 @@
    }
 
    @media only screen and (min-width: $mobile + 1) {
-    /* For small to medium screens: */
+    /***** For small to medium screens: *****/
     .thumbnail {
         float: none;
-        height: 25rem;
+        height: 30rem;
         margin: 0;
         opacity: 1;
         padding-bottom: 0 0 5rem 0;
     }
    }
 
-   @media only screen and (min-width: $mobile + 500) {
-    /* For small to medium screens: */
+   @media only screen and (min-width: $mobile + 586) {
+    /***** For large screens: *****/
     .thumbnail {
         float: none;
-        height: 100%;
+        height: 40rem;
         margin: 0;
         opacity: 1;
         padding-bottom: 0 0 5rem 0;

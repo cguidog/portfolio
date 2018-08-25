@@ -43,6 +43,7 @@
 }
 
 @media only screen and (min-width: $mobile + 1){
+    /***** For medium screens or larger *****/
     .menu a i:hover {
         color: $selected;
     }
