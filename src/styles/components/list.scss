@@ -69,8 +69,8 @@
     /***** For mobile phones: *****/
     .item_detail {
         font-size: 1.5rem;
-        float: initial;
-        height: 40%;
+        float: none;
+        height: 50%;
         margin: 0;
         opacity: 1;
         padding-bottom: 2rem;
@@ -127,7 +127,7 @@
     .thumbnail {
         float: none;
         height: 18rem;
-        margin: 0;
+        margin-bottom: 10%;
         opacity: 1;
         padding-bottom: 0 0 5rem 0;
     }
